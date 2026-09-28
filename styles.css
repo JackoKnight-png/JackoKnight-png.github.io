@@ -1,0 +1,295 @@
+/* This is for the top of the website */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: darkblue;
+    padding: 15px;
+}
+
+.navbar a {
+    background-color: lightgray;
+    color: darkblue;
+
+    padding: 10px 15px;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar a {
+        width: auto;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+/* The background of the website */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-image: url(images/background.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* The code for the Home page */
+.start {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: 250, 250, 250, 0.9;
+    border-radius: 15px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.hello-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.hello-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello-text h1 {
+    font-size: 38px;
+    line-height: 0;
+}
+
+.hello-text p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .start {
+        grid-template-columns: 300px, 1fr;
+        align-items: center;
+    }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+    .start {
+        grid-template-columns: 300px, 1fr;
+        align-items: center;
+    }
+}
+
+/* Here is the code for My CV page */
+.cv-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+.cv-sidebar {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cv-main {
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: white;
+    border-radius: 15px;
+}
+
+p {
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* This is for the Portfolio page */
+.projects-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+.projects-section h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+/* Phone */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    background-color: #222;
+}
+
+.project-text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.project-text h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.project-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* This is for the About me page */
+/* Phone and layout for the page */
+.about-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: rgba(250, 250, 250, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.about-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-text h1 {
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* Tablet */
+@media (min-width: 768px) {
+    .about-card{
+        max-width: 900px;
+    }
+    
+}
+/* Desktop */
+@media (min-width: 1024px) {
+    .about-card {
+        grid-template-columns: 300px 1fr;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    .profile-image {
+        max-width: 300px;
+    }
+}
